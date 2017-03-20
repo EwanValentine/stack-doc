@@ -3,7 +3,7 @@
 StackDoc is an automated API documentation framework which integrates directly into your API's code to produce automated, easy to read documentation for your API. StackDoc uses reflection and annotation tags to understand how your API works.
 
 ## Example
-```
+```go
 package main
 
 import sd "github.com/ewanvalentine/stack-doc"
