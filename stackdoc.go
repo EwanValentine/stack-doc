@@ -55,9 +55,9 @@ func (stackdoc *StackDoc) Serve() {
 	// Static assets, i.e react build folder
 	http.Handle("/", http.FileServer(http.Dir("./ui/build")))
 
-	// Run API
-	go app.Run(api.SetPort(":9090"))
-
 	// Run UI
-	http.ListenAndServe(":7070", nil)
+	go http.ListenAndServe(":7070", nil)
+
+	// Run API
+	app.Run(api.SetPort(":9090"))
 }
