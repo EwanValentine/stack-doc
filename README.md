@@ -1,6 +1,12 @@
+## Disclaimer
+This is very early stages, probably hold off using it in production for now. Please submit PRs!!
+
 # StackDoc
 
 StackDoc is an automated API documentation framework which integrates directly into your API's code to produce automated, easy to read documentation for your API. StackDoc uses reflection and annotation tags to understand how your API works.
+
+## Why?
+I had very little luck using Swagger, I wanted something much simpler to set-up.
 
 ## Example
 ```go
