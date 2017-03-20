@@ -64,7 +64,7 @@ func (handler *ResourceHandler) UpdateResourceWhereSomething() {}
 
 ```
 
-You can quickly run this by doing `$ go run example/main.go`. Then heading to `http://localhost:7070` in your browser.
+You can quickly run this by doing `$ go run example/main.go`. The route is relative, so ensure to run it from this directory. Then heading to `http://localhost:7070` in your browser.
 
 Above you can see we're creating a handler for an api called 'ResourceHandler', this takes a base path for that resource, i.e `/api/v1/resources`, then it takes an instance of the resource itself. This is important as it allows StackDoc to understand the relationship between your model, and your endpoints.
 
